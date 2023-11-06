@@ -112,7 +112,7 @@ class Data {
 +write()
 }
 
-class DataXML{
+class DataJSON {
 +read()
 +write()
 }
@@ -138,7 +138,7 @@ GeneralList <|-- ClientList
 GeneralList <|-- TravelList
 Packages o-u- ClientList
 Packages o-u- RouteList
-Data <|-- DataXML
+Data <|-- DataJSON
 General <|-- Client
 General <|-- Routes
 General <|-- Packages
