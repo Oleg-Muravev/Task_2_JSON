@@ -8,6 +8,9 @@ class TravelList(GeneralList):
         else:
             GeneralList.appendItem(self, Packages(code, date, quantity, discount))
 
+    def newItem(self, date='', quantity=0, discount=0):
+        GeneralList.appendItem(self, Packages(self.getNewCode(), date, quantity, discount))
+  
         
     def getStr(self):
         s = ''
